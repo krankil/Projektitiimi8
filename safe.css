@@ -1,1 +1,42 @@
 
+body {
+    background: #0942FF;
+    background: -moz-linear-gradient(45deg, #0942FF 0%, #1E95FF 44%, #35FFFF 100%);
+    background: -webkit-linear-gradient(45deg, #0942FF 0%, #1E95FF 44%, #35FFFF 100%);
+    background: linear-gradient(45deg, #0942FF 0%, #1E95FF 44%, #35FFFF 100%);
+}
+
+h1 {
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, 2px 1px 5px rgba(1, 5, 5, 0);
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+h2 {
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, 2px 1px 5px rgba(1, 5, 5, 0);
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+h3 {
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, 2px 1px 5px rgba(1, 5, 5, 0);
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+h4 {
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, 2px 1px 5px rgba(1, 5, 5, 0);
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+h5 {
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, 2px 1px 5px rgba(1, 5, 5, 0);
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+p {
+    font-family: sans-serif;
+    color: #ffffff;
+}
