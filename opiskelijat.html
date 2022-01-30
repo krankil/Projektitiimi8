@@ -3,61 +3,86 @@
 <head>
     <meta name="viewport" content="width=devicec-width, initial-scale=1.0">
     <title>Safe-vakuutusyhtiö / Suomen halvin ja kannattavin vakuutusyhtiö / Opiskelijoiden vakuutukset</title>
+    <style>
+
+ .column {
+  float: left;
+  width: 49%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+} 
+.responsive {
+  width: 100%;
+  height: auto;
+}
+    </style>
 </head>
 
 <body>
     <h1>Safe</h1>
     <h2>Opiskelijoiden vakuutukset</h2>
-    <p><img src="opiskelijat1.jpg"></p>
-    
-    <h3>Opiskelijoiden kotivakuutukset</h3>
-    <p><img src="kotivakuutus.jpg"></p>
-    
-    <p>Kotivakuutus on tärkeä vakuutus jokaiselle myös opiskelijoille. Se on tärkein turva tavaroillesi, sekä kodillesi. Vaikka omaisuutta ei olisi vielä ehtinyt kertyä paljoa,
-     on se tärkeää turvata vahinkojen varalta. Mahdolliset omaisuusvahingot voivat ikävästi horjuttaa opiskelijan kukkaroa. Turvaamalla omaisuutesi nautit arjesta
-     levollisemmin mielin.
+    <p><img src="opiskelijat1.jpg" class="responsive"></p>
 
-    <p>Kotivakuutuksen hankkiminen on todella helppoa! Voit valita kolmesta vaihtoehdostamme sinulle sopivimman kotivakuutuksen.</p>
+    <div class="row">
+        <div class="column">
+            <h3>Opiskelijoiden kotivakuutukset</h3>
+            <img src="kotivakuutus1.jpg" alt="Kotivaakuutus suojaa perheen kotia" style="width:100%" class="responsive">
+            <p>Kotivakuutus on tärkeä vakuutus jokaiselle myös opiskelijoille. Se on tärkein turva tavaroillesi, sekä kodillesi. Vaikka omaisuutta ei olisi vielä ehtinyt kertyä paljoa,
+                on se tärkeää turvata vahinkojen varalta. Mahdolliset omaisuusvahingot voivat ikävästi horjuttaa opiskelijan kukkaroa. Turvaamalla omaisuutesi nautit arjesta
+                levollisemmin mielin.
+           
+               <p>Kotivakuutuksen hankkiminen on todella helppoa! Voit valita kolmesta vaihtoehdostamme sinulle sopivimman kotivakuutuksen.</p>
+           
+               <p>Vakuutuspaketti S sopii niille, jotka haluavat minimiturvan omaisuudelleen. Edullisin pakettimme sisältää muun muassa vastuuvakuutusturvan, jota useimmat
+                vuokranantajat edellyttävät vuokralaiseltaan. Vastuuvakuutusturvasta voidaan korvata vahinkoja, jotka olet esimerkiksi huolimattomuudesta johtuen aiheuttanut
+                toiselle henkilölle tai hänen omaisuudelleen, ja joista olet lain mukaan korvausvastuussa.</p>
+           
+               <p>Vakuutuspaketti M sopii puolestaan niille, jotka haluavat laajempaa turvaa omaisuudelleen. M-paketista löytyy muun muassa rikosturva, joka kattaa esimerkiksi
+                tilanteita, joissa omaisuuttasi varastetaan lukitusta kodistasi. Myös opiskelija-asuntojen murrot ovat mahdollisia, ja siksi myös rikollisuuden varalta on hyvä
+                varautua vakuutuksella.</p>
+           
+               <p>Vakuutuspaketti L on laajin pakettimme, joka sopii kaikille, jotka haluavat mahdollisimman kattavaa turvaa omaisuudelleen, muun muassa tavaroiden rikkoutumisen varalle.
+                Opiskelijan talous voi olla välillä tiukilla, mutta kotivakuutuksesta ei kannata säästää. L-paketista voidaan korvata vahinkoja esimerkiksi seuraavanlaisissa tilanteissa:</p>
+        </div>
+        <div class="column">
+            <h3>Opiskelijoiden tapaturmavakuutus</h3>
+            <img src="tapaturma2.png" alt="Kahden auton törmäys toisiinsa" style="width:100%" class="responsive">
+            <p>Kotona ja vapaa-ajalla sattuu paljon hoitoa vaativia tapaturmia, niin lapsille kuin aikuisillekin. Varmista, että saat parhaan hoidon heti, jolloin paraneminenkin alkaa
+                nopeasti.</p>
+               
+               <p>Kun otat tapaturmavakuutuksen LähiTapiolasta, saat myös TerveysHelpin. TerveysHelpissä terveydenhuollon ammattilaiset ovat apunasi ja saat nopeasti ja helposti vastauksia
+               terveyshuoliisi, jos tapaturma sattuu.</p>
 
-    <p>Vakuutuspaketti S sopii niille, jotka haluavat minimiturvan omaisuudelleen. Edullisin pakettimme sisältää muun muassa vastuuvakuutusturvan, jota useimmat
-     vuokranantajat edellyttävät vuokralaiseltaan. Vastuuvakuutusturvasta voidaan korvata vahinkoja, jotka olet esimerkiksi huolimattomuudesta johtuen aiheuttanut
-     toiselle henkilölle tai hänen omaisuudelleen, ja joista olet lain mukaan korvausvastuussa.</p>
-
-    <p>Vakuutuspaketti M sopii puolestaan niille, jotka haluavat laajempaa turvaa omaisuudelleen. M-paketista löytyy muun muassa rikosturva, joka kattaa esimerkiksi
-     tilanteita, joissa omaisuuttasi varastetaan lukitusta kodistasi. Myös opiskelija-asuntojen murrot ovat mahdollisia, ja siksi myös rikollisuuden varalta on hyvä
-     varautua vakuutuksella.</p>
-
-    <p>Vakuutuspaketti L on laajin pakettimme, joka sopii kaikille, jotka haluavat mahdollisimman kattavaa turvaa omaisuudelleen, muun muassa tavaroiden rikkoutumisen varalle.
-     Opiskelijan talous voi olla välillä tiukilla, mutta kotivakuutuksesta ei kannata säästää. L-paketista voidaan korvata vahinkoja esimerkiksi seuraavanlaisissa tilanteissa:</p>
-    <h3>Opiskelijoiden Henkivakuutus</h3>
-    <p>Henkivakuutus on vakuutus, jossa riski liittyy vakuutetun elämään ja kuolemaan. Vapaaehtoiset henkivakuutukset täydentävät lakisääteistä sosiaalivakuutusta. Vaikka Suomen
-     sosiaalivakuutus on suhteellisen kattava, sen etuuksien määrittely on kaavamaista ja perustuu kansalaisen keskimääräisiin tarpeisiin. Kansalaisilla on kuitenkin erilaisia
-     elämäntilanteita ja turvan tarpeita, joita vapaaehtoiset vakuutukset täydentävät.</p>
-
-    <h3>Opiskelijoiden tapaturmavakuutus</h3>
-    <p><img src="tapaturma.jpg"></p>
-    <p>Kotona ja vapaa-ajalla sattuu paljon hoitoa vaativia tapaturmia, niin lapsille kuin aikuisillekin. Varmista, että saat parhaan hoidon heti, jolloin paraneminenkin alkaa
-     nopeasti.</p>
-    
-    <p>Kun otat tapaturmavakuutuksen LähiTapiolasta, saat myös TerveysHelpin. TerveysHelpissä terveydenhuollon ammattilaiset ovat apunasi ja saat nopeasti ja helposti vastauksia
-    terveyshuoliisi, jos tapaturma sattuu.</p>
-    
-    //Erillinen laatikko tälle
-    <h3>Neljä syytä ottaa tapaturmavakuutus</h3>
-    <h2>1</h2><p>Tapaturma ei käy kukkarolle, sillä tapaturmavakuutus korvaa hoitokuluja ilman omavastuuta tarvittaessa myös yksityisellä lääkäriasemalla.</p>
-
-    <h2>2</h2><p>Yllättävä tapaturma voi sattua kotona, työssä, koulussa tai harrastuksissa. Voit laajentaa vakuutuksesi kattamaan myös urheilussa sattuneet tapaturmat.<p>
-
-    <h2>3</h2><p>Voit myös täydentää tapaturmavakuutusta Laajennetulla tapaturmaturvalla. Kaikki vammat eivät oikeuta vakuutuskorvaukseen, vaikka ne ilmenisivät tapaturman
-    yhteydessä. Laajennetulla tapaturmaturvalla tarjoamme lisäturvaa liikkuvalle ja urheilevalle henkilölle.</p>
-
-    <h2>4</h2><p>Voit lisäksi turvata oman toimeentulosi lyhytaikaisen työkyvyttömyyden tai tapaturmasta aiheutuvan pysyvän haitan varalle. Läheistesi toimeentulon voit turvata
-    tapaturmaisen kuoleman varalta.</p>
-
-    <h3>Opiskelijoiden matkavakuutus</h3>
-    <p><img src="matkavakuuutus.jpg"></p>
-    <p>Pakkaa aina matkalle mukaan myös matkavakuutus, jolla turvaat itsellesi ja matkatavaroillesi aiheutuneita vahinkoja ja voit lähteä reissuun ilman huolta. Jatkuva
-     matkavakuutus ei koskaan unohdu matkasta ja se on aina valmiina, kun lähdet reissuun. Se on helpoin ja usein myös edullisin vaihtoehto niin kotimaan kuin ulkomaan matkoille</p>
-
+               //Erillinen laatikko tälle 
+               <h3>Neljä syytä ottaa tapaturmavakuutus</h3>
+               <h2>1</h2><p>Tapaturma ei käy kukkarolle, sillä tapaturmavakuutus korvaa hoitokuluja ilman omavastuuta tarvittaessa myös yksityisellä lääkäriasemalla.</p>
+           
+               <h2>2</h2><p>Yllättävä tapaturma voi sattua kotona, työssä, koulussa tai harrastuksissa. Voit laajentaa vakuutuksesi kattamaan myös urheilussa sattuneet tapaturmat.<p>
+           
+               <h2>3</h2><p>Voit myös täydentää tapaturmavakuutusta Laajennetulla tapaturmaturvalla. Kaikki vammat eivät oikeuta vakuutuskorvaukseen, vaikka ne ilmenisivät tapaturman
+               yhteydessä. Laajennetulla tapaturmaturvalla tarjoamme lisäturvaa liikkuvalle ja urheilevalle henkilölle.</p>
+           
+               <h2>4</h2><p>Voit lisäksi turvata oman toimeentulosi lyhytaikaisen työkyvyttömyyden tai tapaturmasta aiheutuvan pysyvän haitan varalle. Läheistesi toimeentulon voit turvata
+               tapaturmaisen kuoleman varalta.</p>
+        </div>
+        <div class="column">
+            <h3>Opiskelijoiden matkavakuutus</h3>            
+            <img src="matkavakuuutus1.jpg" alt="Matkalaukun päällä huivi ja kamera" style="width:100%" class="responsive">
+            <p>Pakkaa aina matkalle mukaan myös matkavakuutus, jolla turvaat itsellesi ja matkatavaroillesi aiheutuneita vahinkoja ja voit lähteä reissuun ilman huolta. Jatkuva
+                matkavakuutus ei koskaan unohdu matkasta ja se on aina valmiina, kun lähdet reissuun. Se on helpoin ja usein myös edullisin vaihtoehto niin kotimaan kuin ulkomaan matkoille</p>           
+        </div>
+        <div class="column">
+            <h3>Opiskelijoiden Henkivakuutus</h3>
+            <img src="henkivakuutus1.png" alt="Rikkinäinen lego hahmo" style="width:100%" class="responsive">
+            <p>Henkivakuutus on vakuutus, jossa riski liittyy vakuutetun elämään ja kuolemaan. Vapaaehtoiset henkivakuutukset täydentävät lakisääteistä sosiaalivakuutusta. Vaikka Suomen
+                sosiaalivakuutus on suhteellisen kattava, sen etuuksien määrittely on kaavamaista ja perustuu kansalaisen keskimääräisiin tarpeisiin. Kansalaisilla on kuitenkin erilaisia
+                elämäntilanteita ja turvan tarpeita, joita vapaaehtoiset vakuutukset täydentävät.</p>
+        </div>
+    </div>    
 </body>
 </html>
