@@ -46,6 +46,53 @@ p {
 }
 
 
+#palvelutiedot{
+    margin-top: 10%;
+}
+.column {
+    float: left;
+    width: 32%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+} 
+.responsive {
+    width: 100%;
+    height: auto;
+}
+.responsive {
+    width: 100%;
+    height: auto;
+}        
+#kuvattimet {
+   display: grid;
+   grid-template-rows: 50% 50%;
+   grid-template-columns: 33% 33% 33%;
+}
+#ylävasen {
+   grid-row: 1;
+   grid-column: 1;
+}
+#yläkeski {
+   grid-row: 1;
+   grid-column: 2;
+}
+#yläoikea {
+    grid-row: 1;
+   grid-column: 3;
+   }
+#alavasen {
+   grid-row: 2;
+   grid-column: 1;
+   }
+#alaoikea {
+   grid-row: 2;
+   grid-column: 3;
+   }
 nav div{
     display: inline;
 }
@@ -53,19 +100,44 @@ nav div{
     display: grid;
     grid-template-columns: 50% 50%;
     margin-top: 10%;
-    text-align: center;
 }
 #yhteysgrid li{
     list-style-type: none;
     text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, 2px 1px 5px rgba(1, 5, 5, 0);
     color: #ffffff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: small;
 }
 #yhteystiedot{
     grid-column: 1/2;
     text-align: center;
 }
+
 #laskutustiedot{
     grid-column: 2/3;
     text-align: center;
+}
+
+@media only screen and (max-width: 890px) {
+    #palvelutiedot em{
+        font-size: 0.7em;
+    }
+    .column h3{
+        font-size: 0.4em;
+    }
+}
+@media only screen and (max-width: 650px){
+    #kuvattimet{
+        display: block; 
+    }
+    #kuvattimet em{
+        font-size: 1em;
+    }
+    #yhteysgrid{
+        display: block;
+    }
+    #laskutustiedot{
+        margin-top: 10%;
+    }
 }
