@@ -61,6 +61,7 @@ nav div{
     color: #ffffff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 #yhteystiedot{
     grid-column: 1/2;
     text-align: center;
