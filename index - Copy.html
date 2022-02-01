@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=devicec-width, initial-scale=1.0">
+    <title>Safe-vakuutusyhtiö / Suomen halvin ja kannattavin vakuutusyhtiö</title>
+    <style>
+
+.responsive {
+         width: 100%;
+         height: auto;
+       }        
+#kuvattimet {
+            display: grid;
+            grid-template-rows: 50% 50%;
+            grid-template-columns: 30% 30% 30%;
+        }
+        #ylävasen {
+            grid-row: 1;
+            grid-column: 1;
+        }
+        #yläkeski {
+            grid-row: 1;
+            grid-column: 2;
+        }
+        #yläoikea {
+            grid-row: 1;
+            grid-column: 3;
+        }
+        #alavasen {
+            grid-row: 2;
+            grid-column: 1;
+        }
+        #alaoikea {
+            grid-row: 2;
+            grid-column: 3;
+        }
+
+           </style>
+    <meta charset ="UTF-8">
+</head>
+
+<body>
+    <!--Navigointipalkki-->
+    <nav>
+        <div>Henkilöasiakkaat</div>
+        <div>Yritysasiakkaat</div>
+    </nav>
+
+    <!-- Pääotsikko sekä kuvaava teksti --> 
+    <div>
+        <h1>Safe</h1>
+        <strong>Suomen halvin ja<br>kannattavin vakuutusyhtiö, joka<br>tarjoaa kattavia alennuksia nuorille.</strong>
+    </div>
+    
+    <!--Etusivun osa, johon sisältö ja linkit palveluista kertoville alisivuille-->
+    <section id = "palvelutiedot">
+        <div id = "kuvattimet">
+                <div id = "ylävasen"><em>Opiskelijoille ja nuorille vakuutuspalvelut</em>
+                    <img src="kuvat/opiskelijaetusivucopy.png" alt="Henkilö peittää kasvonsa kirjalla" style="width:100%" class="responsive"></div>
+                <div id = "yläkeski"><em>Eläkeläisten ja ikäihmisten vakuutuspalvelut</em>
+                    <img src="kuvat/senioritcopy.png" alt="Puukirjaimista muodostunut sana seniori" style="width:100%" class="responsive"></div>
+                <div id = "yläoikea"><em>Ilmoita vahingosta</em>
+                    <img src="kuvat/vahinkocopy.png" alt="Jäätelö pudonnut maahan" style="width:100%" class="responsive"></div>
+                <div id = "alavasen"><em>Autovakuutus</em>
+                    <img src="kuvat/autovakuutuscopy.png" alt="Legoauto" style="width:100%" class="responsive"></div>
+                <div id = "alaoikea"><em>Kotivakuutus</em>
+                    <img src="kuvat/kotivakuuutuscopy.jpg" alt="Koti kämmenellä" style="width:100%" class="responsive"></div>
+        </div>
+        </section>
+    <!--Etusivun osa, johon yhteystiedot ja laskutustiedot-->
+    <section id = "yritystiedot">
+        <div>Yhteystiedot</div>
+        <div>Laskutustiedot</div>
+    </section>
+    <!--Footeriin voi laittaa tietosuojaselosteen ja käyttöehdot-->
+    <footer> </footer>
+
+
+
+</body>
+</html>
+  
