@@ -44,7 +44,9 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #ffffff;
 }
-
+table, tr{
+    border: 1px, solid black;
+}
 
 #palvelutiedot{
     margin-top: 10%;
