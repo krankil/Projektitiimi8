@@ -1,0 +1,236 @@
+<style>
+body {
+    background: #0942FF;
+    background: -moz-linear-gradient(45deg, #0942FF 0%, #1E95FF 44%, #35FFFF 100%);
+    background: -webkit-linear-gradient(45deg, #0942FF 0%, #1E95FF 44%, #35FFFF 100%);
+    background: linear-gradient(45deg, #0942FF 0%, #1E95FF 44%, #35FFFF 100%);
+}
+body img{
+    max-width: 100%;
+}
+
+
+h1 {
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, 2px 1px 5px rgba(1, 5, 5, 0);
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, 2px 1px 5px rgba(1, 5, 5, 0);
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, 2px 1px 5px rgba(1, 5, 5, 0);
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+h4 {
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, 2px 1px 5px rgba(1, 5, 5, 0);
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+h5 {
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, 2px 1px 5px rgba(1, 5, 5, 0);
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+}
+
+
+#palvelutiedot{
+    margin-top: 10%;
+}
+.column {
+    float: left;
+    width: 32%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+} 
+.responsive {
+    width: 100%;
+    height: auto;
+}
+.responsive {
+    width: 100%;
+    height: auto;
+}        
+#kuvattimet {
+   display: grid;
+   grid-template-rows: 50% 50%;
+   grid-template-columns: 33% 33% 33%;
+}
+#ylävasen {
+   grid-row: 1;
+   grid-column: 1;
+}
+#yläkeski {
+   grid-row: 1;
+   grid-column: 2;
+}
+#yläoikea {
+    grid-row: 1;
+   grid-column: 3;
+   }
+#alavasen {
+   grid-row: 2;
+   grid-column: 1;
+   }
+#alaoikea {
+   grid-row: 2;
+   grid-column: 3;
+   }
+nav div{
+    display: inline;
+}
+#yhteysgrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 10%;
+}
+#yhteysgrid li{
+    list-style-type: none;
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, 2px 1px 5px rgba(1, 5, 5, 0);
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: small;
+}
+#yhteystiedot{
+    grid-column: 1/2;
+    text-align: center;
+}
+
+#laskutustiedot{
+    grid-column: 2/3;
+    text-align: center;
+}
+
+@media only screen and (max-width: 890px) {
+    #palvelutiedot em{
+        font-size: 0.7em;
+    }
+    .column h3{
+        font-size: 0.4em;
+    }
+}
+@media only screen and (max-width: 650px){
+    #kuvattimet{
+        display: block; 
+    }
+    #kuvattimet em{
+        font-size: 1em;
+    }
+    #yhteysgrid{
+        display: block;
+    }
+    #laskutustiedot{
+        margin-top: 10%;
+    }
+}
+    </style>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe / Finland's cheapest and worthilest insurance company</title>
+    <link rel="stylesheet" href="safe.css">
+    <style>
+
+    .column {
+    float: left;
+    width: 49%;
+    padding: 5px;
+    }
+
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    } 
+    .responsive {
+    width: 100%;
+    height: auto;
+    }
+    </style>
+</head>
+
+<body>
+     <!--Navigointipalkki-->
+     <nav>
+        <div><a href = "henkiloasiakkaat.html">Private customers</a></div>
+        <div><a href = "yritysasiakkaat.html">Corporate customers</a></div>
+    </nav>
+
+    <!-- Pääotsikko sekä kuvaava teksti --> 
+    <div>
+        <h1>Safe</h1>
+        <strong>Finland's cheapest and<br>worthwhilest insurance company, which<br>offers the best deals to students.</strong>
+    </div>
+    
+    <h2>Insurances for students</h2>
+    <p><img src="kuvat/opiskelijat1.jpg" alt="kaksi henkilöä tietokoneen ääressä" class="responsive"></p>
+
+
+    <p>Insuring your home is really easy! You can choose from up to three packages to find the best fit for you.</p>
+
+   
+     <P>Insurance package S fits for those who want the minimal price for their insurance. Our cheapest package includes responsibility insurance,
+         which most land lords require from their tenants. With responsibility insurance you cover accidental breakages of either personal items or someone else's which you are legally bound to cover.
+     </P>
+
+   
+     <p>Insurance package M fits for those who want more comprehensive security for their personal property. M-package covers theft insurance, which covers the theft of personal property from inside your home.
+         Breaking into student apartments is quite common which is why one should prepare for it by insuring. </p>
+
+   
+     <p>Insurance package L is our most comprehensive package, it fits for those who want as much security on their personal property as possible.
+         A student's economy can sometimes be tight, but when it comes to home insurance, one should not attempt to haggle. L-package covers accidents in situations as follows:
+     </p>
+    <h3>Student's life insurance</h3>
+   
+     <p>Life insurance covers the insured persons death. Voluntary life insurances completes the legally bound social insurance. Although Finland's social insurance is quite
+         comprehensive, it's benefits defining is schematic and is based on the average citizen's needs. People do however have varying living situations and needs for security, 
+         which are completed by private insurances.
+     </p>
+
+    <h3>Student's accident insurance</h3>
+    <p><img src="Kuvat/tapaturma.png"></p>
+     <p>A lot can happen in home and during free time which requires healthcare, both to children and adults. Make sure you have the best care available to you at the moment.
+     </p>
+    
+    //Erillinen laatikko tälle
+    <h3>Four reasons to take accident insurance</h3>
+    <h2>1</h2><p>An accident doesn't happen to your wallet, as the insurances covers healthcare even in private institutions.</p>
+
+    <h2>2</h2><p>A surprising accident can happen at home, work, school or in hobbies. You can expand your insurance to cover sport accidents as well. </p>
+
+    <h2>3</h2><p>You can expand your accident insurance with our comprehensive accident. All injuries do not justify compensation, even if they come forward in context of said accident.
+        With the expanded insurance we offer additional compensation for the moving and the sporty.</p>
+
+    <h2>4</h2><p>You can additionally insure your short term incapability to work, or permanent health damage from an accident. You can insure your close family's health and in the case of 
+        injuries or death. </p>
+
+    <h3>Student's travel insurance</h3>
+    <p><img src="Kuvat/matkavakuuutus.jpg"></p>
+     <p>Remember to pack your insurance with you when traveling, with travel insurance you cover yourself and damage to your personal property, which makes traveling a little more
+         stress free. Continuous travel insurance can never be forgotten, and is always ready to go when you are. It is the easiest and cheapest option during both in-country and 
+        abroad traveling.
+     </p>
+        </div>
+    </div>    
+</body>
+</html>
