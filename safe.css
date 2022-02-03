@@ -1,9 +1,9 @@
 
 body {
-    background: #0942FF;
-    background: -moz-linear-gradient(45deg, #0942FF 0%, #1E95FF 44%, #35FFFF 100%);
-    background: -webkit-linear-gradient(45deg, #0942FF 0%, #1E95FF 44%, #35FFFF 100%);
-    background: linear-gradient(45deg, #0942FF 0%, #1E95FF 44%, #35FFFF 100%);
+    background: #f2eee6;
+    background: -moz-linear-gradient(45deg, #5ebddd 0%, #add8e6 44%, #5ebddd 100%);
+    background: -webkit-linear-gradient(45deg, #5ebddd 0%, #add8e6 44%, #5ebddd 100%);
+    background: linear-gradient(45deg, #5ebddd 0%, #add8e6 44%, #5ebddd 100%);
 }
 body img{
     max-width: 100%;
