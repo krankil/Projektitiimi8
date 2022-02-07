@@ -76,6 +76,10 @@ p {
    grid-template-rows: 50% 50%;
    grid-template-columns: 33% 33% 33%;
 }
+#kuvattimet em{
+    white-space: nowrap;
+    font-weight: bold;
+}
 #ylävasen {
    grid-row: 1;
    grid-column: 1;
@@ -113,28 +117,34 @@ a:link, a:visited {
     background-color: rgb(13, 88, 228);
     color: white;
     }
-#yhteysgrid{
+.yhteysgrid{
     display: grid;
     grid-template-columns: 50% 50%;
     margin-top: 10%;
+    background-color: #4074b5;
 }
-#yhteysgrid li{
+.yhteysgrid li{
     list-style-type: none;
     text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, 2px 1px 5px rgba(1, 5, 5, 0);
     color: #ffffff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    font-size: small;
+    font-size: 80%;
 }
-#yhteystiedot{
+.yhteystiedot{
     grid-column: 1/2;
     text-align: center;
+    border: #050200 solid 5px;
+    border-radius: 5%;
 }
 
-#laskutustiedot{
+.laskutustiedot{
     grid-column: 2/3;
     text-align: center;
+    border: #050200 solid 5px;
+    border-radius: 5%;
 }
+
 
 @media only screen and (max-width: 890px) {
     #palvelutiedot em{
@@ -144,17 +154,20 @@ a:link, a:visited {
         font-size: 0.4em;
     }
 }
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 700px){
     #kuvattimet{
         display: block; 
     }
     #kuvattimet em{
         font-size: 1em;
     }
-    #yhteysgrid{
+    .yhteysgrid{
         display: block;
     }
-    #laskutustiedot{
+    .yhteystiedot{
+        margin-top:5%;
+    }
+    .laskutustiedot{
         margin-top: 10%;
     }
 }
