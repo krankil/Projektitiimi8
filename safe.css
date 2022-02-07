@@ -1,8 +1,8 @@
 body {
-    background: #F2EEE6;
-    background: -moz-linear-gradient(45deg, #5ebddd 0%, #ADD8E6 44%, #5ebddd 100%);
-    background: -webkit-linear-gradient(45deg, #5ebddd 0%, #ADD8E6 44%, #5ebddd 100%);
-    background: linear-gradient(45deg, #5ebddd 0%, #ADD8E6 44%, #5ebddd 100%);
+    background: #f2eee6;
+    background: -moz-linear-gradient(45deg, #5ebddd 0%, #add8e6 44%, #5ebddd 100%);
+    background: -webkit-linear-gradient(45deg, #5ebddd 0%, #add8e6 44%, #5ebddd 100%);
+    background: linear-gradient(45deg, #5ebddd 0%, #add8e6 44%, #5ebddd 100%);
 }
 body img{
     max-width: 100%;
@@ -38,12 +38,16 @@ h5 {
     color: #ffffff;
     font-family: sans-serif;
 }
-
+td bold {
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, 2px 1px 5px rgba(1, 5, 5, 0);
+    color: #ffffff;
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #331e11;
 }
-
 
 #palvelutiedot{
     margin-top: 10%;
@@ -95,6 +99,20 @@ p {
 nav div{
     display: inline;
 }
+a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(13, 88, 228);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    }
+        
+    a:hover, a:active {
+    background-color: rgb(13, 88, 228);
+    color: white;
+    }
 #yhteysgrid{
     display: grid;
     grid-template-columns: 50% 50%;
