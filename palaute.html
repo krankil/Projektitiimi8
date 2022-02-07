@@ -22,15 +22,25 @@
     <section id = "lomakkeet">
     <form>
         <fieldset>
-            <legend>Yhteystiedot ja ajankohta</legend>
-            <label for="paivamaara">Päivämäärä: </label>
-            <input type="date" id = "paivamaara" name = "paivamaara">
-            <label for="etunimi">Etunimi: </label>
-            <input type = "text" id ="etunimi" name = "etunimi">
-            <label for="sukunimi">Sukunimi: </label>
-            <input type = "text" id ="sukunimi" name = "sukunimi">
-            <label for="sahkoposti">Sähköpostiosoite: </label>
-            <input type="email" id = "sahkoposti" name = "sahkoposti">
+            <legend><h2>Ota yhteyttä</h2></legend>
+            <label for="paivamaara">Päivämäärä: </label><br>
+            <input type="date" id = "paivamaara" name = "paivamaara"><br>
+            <label for="etunimi">Etunimi: </label><br>
+            <input type = "text" id ="etunimi" name = "etunimi"><br>
+            <label for="sukunimi">Sukunimi: </label><br>
+            <input type = "text" id ="sukunimi" name = "sukunimi"><br>
+            <label for="sahkoposti">Sähköpostiosoite: </label><br>
+            <input type="email" id = "sahkoposti" name = "sahkoposti"><br>
+            <label for="ilmoitus"></label>Seloste<br>
+            <textarea placeholder="Kirjoita lyhyt seloste yhteydenoton syystä" name = "ilmoitus" rows = "15" cols = "30"></textarea><br>
+            <input type="submit" value = "Lähetä"><input type="reset">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><h2>Anna palautetta</h2></legend>
+            <label for="tyytyväisyys">Anna avoin palaute palveluistamme.!</label><br>
+            <textarea placeholder="Syötä avoin palaute palvelusta" name = "palaute" rows="15" cols="30"></textarea><br>
+            <input type="submit" value = "Lähetä"><input type="reset">
         </fieldset>
     </form>
 
