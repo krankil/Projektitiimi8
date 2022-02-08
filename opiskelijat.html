@@ -49,15 +49,44 @@ em {
     </head>
 
 <body>
-     <!--Navigointipalkki-->
-     <nav>
+      <!--Navigointipalkki isommille laitteille-->
+    <nav class = "normnav">
         <div><a href = "index - Copy.html">Etusivu</a></div>
-        <div><a href = "henkiloasiakkaat.html">Henkilöasiakkaat</a></div>
-        <div><a href = "yritysasiakkaat.html">Yritysasiakkaat</a></div>
+        <div><a href ="henkiloasiakkaat.html">Henkilöasiakkaat</a></div>
+        <div><a href ="yritysasiakkaat.html">Yritysasiakkaat</a></div>
+        <div><a href = "palaute.html">Ota yhteyttä</a></div>
         <div><a href = "opiskelijaten.html">In English</a></div>
-
-
     </nav>
+
+    <!--Puhelinnavigointipalkki-->
+    <nav class = "topnav">
+        <div id = "myLinks">
+            <div><a href = "index - Copy.html">Etusivu</a></div>
+            <div><a href ="henkiloasiakkaat.html">Henkilöasiakkaat</a></div>
+            <div><a href ="yritysasiakkaat.html">Yritysasiakkaat</a></div>
+            <div><a href = "palaute.html">Ota yhteyttä</a></div>
+            <div><a href = "opiskelijaten.html">In English</a></div>
+        </div>
+        <div>
+            <a href="javascript:void(1);" class="icon" onclick="myFunction()">
+                <i class = "fa fa-bars">Menu</i>
+            </a>
+        </div>
+           
+            
+        
+    </nav>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+
+            }
+        }
+    </script>
 
     <!-- Pääotsikko sekä kuvaava teksti --> 
     <div>
