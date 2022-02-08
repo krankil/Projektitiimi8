@@ -127,11 +127,10 @@ a:link, a:visited {
 }
 .yhteysgrid li{
     list-style-type: none;
-    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, 2px 1px 5px rgba(1, 5, 5, 0);
-    color: #ffffff;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    font-size: 80%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-weight: 700;
+    font-size: medium;
 }
 .yhteystiedot{
     grid-column: 1/2;
@@ -146,10 +145,13 @@ a:link, a:visited {
     border: #050200 solid 5px;
     border-radius: 5%;
 }
+
 .topnav{
     display: none;
 }
-
+.icon{
+    font-weight: 700;
+}
 
 @media only screen and (max-width: 1000px) {
     #palvelutiedot em{
