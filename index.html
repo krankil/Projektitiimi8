@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe-vakuutusyhtiö / Suomen halvin ja kannattavin vakuutusyhtiö</title>
+    <link rel="stylesheet" href = "safe.css"> 
+    <style>
+        .column {
+         float: left;
+         width: 30%;
+         padding: 5px;
+       }
+       
+       .row::after {
+         content: "";
+         clear: both;
+         display: table;
+       } 
+       .responsive {
+         width: 100%;
+         height: auto;
+       }
+    </style>
+    <meta charset ="UTF-8">
+</head>
+
+<body>
+    <!--Navigointipalkki-->
+    <nav>
+        <div><a href ="henkiloasiakkaat.html">Henkilöasiakkaat</a></div>
+        <div><a href ="yritysasiakkaat.html">Yritysasiakkaat</a></div>
+    </nav>
+
+    <!-- Pääotsikko sekä kuvaava teksti --> 
+    <div>
+        <h1>Safe</h1>
+        <strong>Suomen halvin ja<br>kannattavin vakuutusyhtiö, joka<br>tarjoaa kattavia alennuksia nuorille.</strong>
+    </div>
+    
+    <!--Etusivun osa, johon sisältö ja linkit palveluista kertoville alisivuille-->
+    <section id = "palvelutiedot">
+        <div class="row">
+            <div class="column">
+                <a href = "opiskelijat.html">
+                <div id = "ylävasen"><em>Opiskelijoille ja nuorille suunnatut vakuutuspalvelut</em></div>
+                    <img src="kuvat/opiskelijaetusivu.png" alt="Henkilö peittää kasvonsa kirjalla" style="width:100%" class="responsive">
+                </a>
+            </div>
+            <div class="column">
+                <a href = "seniorit.html">
+                <div id = "yläkeski"><em>Eläkeläisten ja ikäihmisten vakuutuspalvelut</em></div>
+                    <img src="kuvat/seniorit.png" alt="Puukirjaimista muodostunut sana seniori" style="width:100%" class="responsive">
+                </a>
+            </div>
+            <div class="column">
+                <div id = "yläoikea"><em>Ilmoita vahingosta</em></div>
+                    <img src="kuvat/vahinko.png" alt="Jäätelö pudonnut maahan" style="width:100%" class="responsive">
+            </div>
+            <div class="column">
+                <div id = "alavasen"><em>Autovakuutus</em></div>
+                    <img src="kuvat/autovakuutus.png" alt="Legoauto" style="width:100%" class="responsive">
+            </div>
+            <div class="column">
+                <div id = "alaoikea"><em>Kotivakuutus</em></div>
+                    <img src="kuvat/kotivakuuutus.jpg" alt="Koti kämmenellä" style="width:100%" class="responsive">
+            </div>
+        </div>
+        </section>
+    <!--Etusivun osa, johon yhteystiedot ja laskutustiedot-->
+    <section id = "yritystiedot">
+        <div id = "yhteysgrid">
+            <div id = "yhteystiedot">
+                <h4>Yhteystiedot</h4>
+                <ul>
+                    <li>Ota yhteyttä! safe.vakuutus@safe.fi</li>
+                    <br>
+                    <br>
+                    <li>Lassi Luotettava, Toimitusjohtaja, +0100100, luottolassi@safe.fi</li>
+                    <li>Lotta Luottotieto, Tekninen johtaja, +0200200, luottolotta@safe.fi</li>
+                    <li>Lauri Luototon, Markkinointipäällikkö, +0300300, lauriluotto@safe.fi </li>
+                </ul>
+            </div>
+            <div id = "laskutustiedot">
+                <h4>Laskutustiedot</h4>
+                <ul>
+                    <li>Verkkolaskuosoite: </li>
+                    <br>
+                    <br>
+                    <li>Ovt-tunnus:	01029032</li>
+                    <li>Verkkolaskutusoperaattori: Maventa </li>
+                    <li>Välittäjätunnus: 00393021102 (LOTOFIHH) </li>
+                    <br>
+                    <li>Paperilaskut osoitteeseen: </li>
+                    <li>Safe Vakuutusyhtiö Oy, Halpakatu 23, Turku 20720</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+    <!--Footeriin voi laittaa tietosuojaselosteen ja käyttöehdot-->
+    <footer> </footer>
+
+
+
+</body>
+</html>
+  
