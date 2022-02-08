@@ -9,20 +9,48 @@
 
 <body>
     <!--Navigointipalkki-->
-    <nav>
-        <div><a href = "indexen.html">Home</a></div>
-        <div><a href ="henkiloasiakkaat.html">Private customers</a></div>
-        <div><a href ="yritysasiakkaaten.html">Corporate customers</a></div>
-        <div><a href = "index - Copy.html">Suomeksi</a></div>
+   <!--Navigointipalkki isommille laitteille-->
+   <nav class = "normnav">
+    <div><a href = "indexen.html">Home</a></div>
+    <div><a href ="henkiloasiakkaat.html">Private customers</a></div>
+    <div><a href ="yritysasiakkaaten.html">Corporate customers</a></div>
+    <div><a href = "palauteen.html">Contact us!</a></div>
+    <div><a href = "index - Copy.html">Suomeksi</a></div>
     </nav>
+    <!--Puhelinnavigointipalkki-->
+    <nav class = "topnav">
+        <div id = "myLinks">
+            <div><a href = "indexen.html">Home</a></div>
+            <div><a href ="henkiloasiakkaat.html">Private customers</a></div>
+            <div><a href ="yritysasiakkaaten.html">Corporate customers</a></div>
+            <div><a href = "palauteen.html">Contact us!</a></div>
+            <div><a href = "index - Copy.html">Suomeksi</a></div>
+        </div>
+        <div>
+            <a href="javascript:void(1);" class="icon" onclick="myFunction()">
+                <i class = "fa fa-bars">Menu</i>
+            </a>
+        </div>
 
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+
+            }
+        }
+    </script>
+    </nav>
     <!-- Pääotsikko sekä kuvaava teksti --> 
     <div>
         <h1>Safe</h1>
         <strong>Finland's cheapest and<br>worthwhilest insurance company, which<br>offers the best deals to students.</strong>
 
     </div>
-    
+</nav>    
     <!--Etusivun osa, johon sisältö ja linkit palveluista kertoville alisivuille-->
     <section id = "palvelutiedot">
         <div id = "kuvattimet">
@@ -69,7 +97,7 @@
                     <br>
                     <li>EDI: 01029032</li>
                     <br>
-                    <li>E-invoiceoperator: </li>
+                    <li>E-invoice operator: </li>
                     <li>Maventa</li>
                     <br>
                     <li>Intermediator-identifier: </li>
