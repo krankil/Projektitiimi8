@@ -49,6 +49,7 @@ p {
     color: #331e11;
 }
 
+
 #palvelutiedot{
     margin-top: 10%;
 }
@@ -100,6 +101,7 @@ p {
    grid-row: 2;
    grid-column: 3;
    }
+
 nav div{
     display: inline;
 }
