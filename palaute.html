@@ -14,7 +14,7 @@
         <div><a href ="henkiloasiakkaat.html">Henkilöasiakkaat</a></div>
         <div><a href ="yritysasiakkaat.html">Yritysasiakkaat</a></div>
         <div><a href = "palaute.html">Ota yhteyttä</a></div>
-        <div><a href = "indexen.html">In English</a></div>
+        <div><a href = "palauteen.html">In English</a></div>
     </nav>
 
     <!--Puhelinnavigointipalkki-->
@@ -24,7 +24,7 @@
             <div><a href ="henkiloasiakkaat.html">Henkilöasiakkaat</a></div>
             <div><a href ="yritysasiakkaat.html">Yritysasiakkaat</a></div>
             <div><a href = "palaute.html">Ota yhteyttä</a></div>
-            <div><a href = "indexen.html">In English</a></div>
+            <div><a href = "palauteen.html">In English</a></div>
         </div>
         <div>
             <a href="javascript:void(1);" class="icon" onclick="myFunction()">
@@ -43,36 +43,42 @@
             }
         }
     </script>
-    <br>
 
     <!-- Pääotsikko sekä kuvaava teksti --> 
-    <div id = "otsikko">
-        <h1>Safe</h1>
-        <strong>Suomen halvin ja<br>kannattavin vakuutusyhtiö, joka<br>tarjoaa kattavia alennuksia nuorille.</strong>
-    </div>
-    
-    <!--Etusivun osa, johon sisältö ja linkit palveluista kertoville alisivuille-->
-    <section id = "palvelutiedot">
-        <div id = "kuvattimet">
-            <a href = "opiskelijat.html">
-                <div id = "ylävasen"><em>Opiskelijoille ja nuorille vakuutuspalvelut</em>
-                    <img src="Kuvat/opiskelijatyttölego01.png" alt="Legoukko istuu lattialla läppäri sylissään" style="width:100%" class="responsive"></div></a>
-            <a href = "seniorit.html">
-                <div id = "yläkeski"><em>Eläkeläisten ja ikäihmisten vakuutuspalvelut</em>
-                    <img src="Kuvat/senioriindex01.png" alt="partainen lego ukko seisoo" style="width:100%" class="responsive"></div></a>
-            <a href = "palaute.html">
-                <div id = "yläoikea"><em>Ota yhteyttä!</em>
-                    <img src="Kuvat/vahinkoindex01.png" alt="Pelastaja pelastaa pupun tulipalolta" style="width:100%" class="responsive"></div></a>
-                <a href = "henkiloasiakkaat.html">
-                <div id = "alavasen"><em>Autovakuutus</em>
-                    <img src="Kuvat/autovakuutuscopy.png" alt="Legoauto" style="width:100%" class="responsive"></div></a>
-                <a href = "henkiloasiakkaat.html">
-                    <div id = "alaoikea"><em>Kotivakuutus</em>
-                    <img src="Kuvat/kotiindex01.png" alt="Kaksi legoukkoa kotona" style="width:100%" class="responsive"></div></a>
-        </div>
-        </section>
-    <!--Etusivun osa, johon yhteystiedot ja laskutustiedot-->
-    <section id = "yritystiedot">
+    <div>
+    <h1>Safe</h1>
+    <strong>Suomen halvin ja<br>kannattavin vakuutusyhtiö, joka<br>tarjoaa kattavia alennuksia nuorille.</strong></div>
+
+    <section id = "lomakkeet">
+    <form>
+        <fieldset>
+            <legend><h2>Ota yhteyttä</h2></legend>
+            <label for="paivamaara">Päivämäärä: </label><br>
+            <input type="date" id = "paivamaara" name = "paivamaara"><br>
+            <label for="etunimi">Etunimi: </label><br>
+            <input type = "text" id ="etunimi" name = "etunimi"><br>
+            <label for="sukunimi">Sukunimi: </label><br>
+            <input type = "text" id ="sukunimi" name = "sukunimi"><br>
+            <label for="sahkoposti">Sähköpostiosoite: </label><br>
+            <input type="email" id = "sahkoposti" name = "sahkoposti"><br>
+            <label for="ilmoitus"></label>Seloste<br>
+            <textarea placeholder="Kirjoita lyhyt seloste yhteydenoton syystä" name = "ilmoitus" rows = "15" cols = "30"></textarea><br>
+            <input type="submit" value = "Lähetä"><input type="reset">
+        </fieldset>
+        
+    </form>
+
+    <form>
+        <fieldset>
+            <legend><h2>Anna palautetta</h2></legend>
+            <label for="tyytyväisyys">Anna avoin palaute palveluistamme.!</label><br>
+            <textarea placeholder="Syötä avoin palaute palvelusta" name = "palaute" rows="15" cols="30"></textarea><br>
+            <input type="submit" value = "Lähetä"><input type="reset">
+        </fieldset>
+    </form>
+    </section>
+
+    <section class = "yritystiedot">
         <div class = "yhteysgrid">
             <div class = "yhteystiedot">
                 <ul>
@@ -96,7 +102,6 @@
                     <br>
                     <br>
                     <li>Ovt-tunnus:	01029032</li>
-                    
                     <br>
                     <li>Verkkolaskutusoperaattori: </li>
                     <li>Maventa</li>
@@ -111,11 +116,11 @@
         </div>
         
     </section>
-    <!--Footeriin voi laittaa tietosuojaselosteen ja käyttöehdot-->
-    <footer> </footer>
-
-
-
+    
 </body>
+
+
+
+
+
 </html>
-  

@@ -8,13 +8,41 @@
 </head>
 
 <body>
-     <!--Navigointipalkki-->
-     <nav>
+    <!--Navigointipalkki isommille laitteille-->
+    <nav class = "normnav">
         <div><a href = "index - Copy.html">Etusivu</a></div>
-        <div><a href = "henkiloasiakkaat.html">Henkilöasiakkaat</a></div>
-        <div><a href = "yritysasiakkaat.html">Yritysasiakkaat</a></div>
+        <div><a href ="henkiloasiakkaat.html">Henkilöasiakkaat</a></div>
+        <div><a href ="yritysasiakkaat.html">Yritysasiakkaat</a></div>
+        <div><a href = "palaute.html">Ota yhteyttä</a></div>
+        <div><a href = "senioriten.html">In English</a></div>
     </nav>
 
+    <!--Puhelinnavigointipalkki-->
+    <nav class = "topnav">
+        <div id = "myLinks">
+            <div><a href = "index - Copy.html">Etusivu</a></div>
+            <div><a href ="henkiloasiakkaat.html">Henkilöasiakkaat</a></div>
+            <div><a href ="yritysasiakkaat.html">Yritysasiakkaat</a></div>
+            <div><a href = "palaute.html">Ota yhteyttä</a></div>
+            <div><a href = "senioriten.html">In English</a></div>
+        </div>
+        <div>
+            <a href="javascript:void(1);" class="icon" onclick="myFunction()">
+                <i class = "fa fa-bars">Menu</i>
+            </a>
+        </div>
+    </nav>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+
+            }
+        }
+    </script>
     <!-- Pääotsikko sekä kuvaava teksti --> 
     <div>
         <h1>Safe</h1>
@@ -22,20 +50,20 @@
     </div>
     
     <h2>Senioreiden vakuutukset</h2>
-    <p><img src="Kuvat/seniorishakki.png" alt="kaksi miestä pelaa shakkia ulkona" class="responsive"></p>
+    <p><img src="Kuvat/senioriesittely01.png" alt="kaksi supersankaria syömässä jäätelöä" class="responsive"></p>
     
     <div class="row">
         <div class="column">
             <h3>Seniorien kotivakuutus</h3>
-            <img src="kuvat/seniorikoticopy.png" alt="Mies ja kissa" style="width:100%" class="responsive">
+            <img src="Kuvat/seniorikotilego01.png" alt="Legoukko talon pihalla" style="width:100%" class="responsive">
         </div>
         <div class="column">
-            <h3>Seniorien tapaturmavakutuus</h3>
-            <img src="Kuvat/senioritapaturma.png" alt="kädet pitelevät kävelykeppiä" style="width:100%" class="responsive">
+            <h3>Seniorien tapaturmavakuutus</h3>
+            <img src="Kuvat/pyörätuolilego01.png" alt="legoukko työntää toista legoukkoa pyörätuolilla" style="width:100%" class="responsive">
         </div>
         <div class="column">
             <h3>Seniorien matkavakuutus</h3>
-            <img src="Kuvat/seniorimatka.png" alt="Kaksi henkilö katsoo horisonttiin penkillä istuen" style="width:100%" class="responsive">
+            <img src="Kuvat/legokaksin01.jpg" alt="Kaksi legoukkoa katsoo horisonttiin" style="width:100%" class="responsive">
         </div>
     </div>
 

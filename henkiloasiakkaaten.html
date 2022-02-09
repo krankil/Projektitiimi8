@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe-vakuutusyhtiö / Suomen halvin ja kannattavin vakuutusyhtiö</title>
+    <link rel="stylesheet" href="safe.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+     <!--Navigointipalkki isommille laitteille-->
+     <nav class = "normnav">
+        <div><a href = "indexen.html">Home</a></div>
+        <div><a href ="henkiloasiakkaaten.html">Private customers</a></div>
+        <div><a href ="yritysasiakkaaten.html">Corporate customers</a></div>
+        <div><a href = "palauteen.html">Contact us!</a></div>
+        <div><a href = "henkiloasiakkaat.html">Suomeksi</a></div>
+    </nav>
+
+    <!--Puhelinnavigointipalkki-->
+    <nav class = "topnav">
+        <div id = "myLinks">
+            <div><a href = "indexen.html">Home</a></div>
+            <div><a href ="henkiloasiakkaaten.html">Private customers</a></div>
+            <div><a href ="yritysasiakkaaten.html">Corporate customers</a></div>
+            <div><a href = "palauteen.html">Contact us!</a></div>
+            <div><a href = "henkiloasiakkaat.html">Suomeksi</a></div>
+        </div>
+        <div>
+            <a href="javascript:void(1);" class="icon" onclick="myFunction()">
+                <i class = "fa fa-bars">Menu</i>
+            </a>
+        </div>
+    </nav>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+
+            }
+        }
+    </script>
+
+    <!-- Pääotsikko sekä kuvaava teksti --> 
+    <div>
+        <h1>Safe</h1>
+        <strong>Finland's cheapest and<br>worthwhilest insurance company, which<br>offers comprehensive deals for students.</strong>
+    </div>
+    
+    <h2>Private customers</h2>
+    <p><img src="kuvat/yksityisasiakas.png" alt="lego ukko kävelee hiekalla" class="responsive"></p>
+
+    <p>Safe offers its private customers Finland's best and most comprehensive insurance services - insure yourself today!  </p>
+    
+ 
+    <p>Safe has a long history as a Finnish  insurance company. From our services you will find accident, home, travel insurances and much more.
+        We aim to offer the cheapest possible insurances especially for students, so the new phase in life would be as secured as possible.
+        By insuring from us, you'll join a group of thousands of satisfied customers.</p>
+    
+
+    <p>More detailed information about our services can be found from our for students and for seniors pages, where we more specifically explain the details of the insurances.
+        By ordering our newsletter you will receive up to date information about the newest deals and services. If you didn't find an answer to your question you can also be in contact
+        with us, we aim to get back to you during 24 hours.
+    </p>
+
+</body>
+</html>

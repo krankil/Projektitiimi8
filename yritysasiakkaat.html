@@ -8,12 +8,41 @@
 </head>
 
 <body>
-     <!--Navigointipalkki-->
-     <nav>
+    <!--Navigointipalkki isommille laitteille-->
+    <nav class = "normnav">
         <div><a href = "index - Copy.html">Etusivu</a></div>
-        <div><a href = "henkiloasiakkaat.html">Henkilöasiakkaat</a></div>
-        <div><a href = "yritysasiakkaat.html">Yritysasiakkaat</a></div>
+        <div><a href ="henkiloasiakkaat.html">Henkilöasiakkaat</a></div>
+        <div><a href ="yritysasiakkaat.html">Yritysasiakkaat</a></div>
+        <div><a href = "palaute.html">Ota yhteyttä</a></div>
+        <div><a href = "yritysasiakkaaten.html">In English</a></div>
     </nav>
+
+    <!--Puhelinnavigointipalkki-->
+    <nav class = "topnav">
+        <div id = "myLinks">
+            <div><a href = "index - Copy.html">Etusivu</a></div>
+            <div><a href ="henkiloasiakkaat.html">Henkilöasiakkaat</a></div>
+            <div><a href ="yritysasiakkaat.html">Yritysasiakkaat</a></div>
+            <div><a href = "palaute.html">Ota yhteyttä</a></div>
+            <div><a href = "yritysasiakkaaten.html">In English</a></div>
+        </div>
+        <div>
+            <a href="javascript:void(1);" class="icon" onclick="myFunction()">
+                <i class = "fa fa-bars">Menu</i>
+            </a>
+        </div>
+    </nav>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+
+            }
+        }
+    </script>
 
     <!-- Pääotsikko sekä kuvaava teksti --> 
     <div>
@@ -22,6 +51,8 @@
     </div>
     
     <h2>Yritysasiakkaat</h2>
+    <p><img src="kuvat/yritysasiakas.png" alt="kaksi lego ukkoa pitelee johtoa" class="responsive"></p>
+
     
     <p>Oletko yrittäjä, ja haluat kehittää toimintaasi rauhallisin mielin? Ota vakuutus meiltä, ja pystyt keskittymään yritykseesi huoletta.<p>
     
@@ -31,8 +62,7 @@
     
     <p>Kun vakuutuksen ottaminen on ajankohtaista, tai sinulla on jotain kysyttävää yrityksesi nykyisistä vakuutuksista, ota meihin yhteyttä. 
        Pyrimme vastaamaan aina saman päivän aikana. <p>
-    <p><img src="kuvat/yritysasiakas.png" alt="kaksi lego ukkoa pitelee johtoa" class="responsive"></p>
-
+   
 
 </body>
 </html>
