@@ -68,10 +68,7 @@ p {
     width: 100%;
     height: auto;
 }
-.responsive {
-    width: 100%;
-    height: auto;
-}        
+      
 #kuvattimet {
    display: grid;
    grid-template-rows: 50% 50%;
@@ -164,7 +161,7 @@ a:link, a:visited {
 
 @media only screen and (max-width: 700px){
     #kuvattimet{
-        display: block; 
+        display: block;
     }
     #kuvattimet em{
         font-size: 1em;
@@ -193,5 +190,13 @@ a:link, a:visited {
     .normnav{
         display: none;
     }
+    
+    @media only screen and (max-width: 360px) {
+        #palvelutiedot a:link,#palvelutiedot a:visited{
+            padding:0%;
+        }
+
+    }
+
 }
 
