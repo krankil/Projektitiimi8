@@ -146,7 +146,7 @@ a:link, a:visited {
     display: inline-block;
     }
         
-    a:hover, a:active {
+a:hover, a:active {
     background-color: #87beff;
     color: black;
     }
@@ -172,7 +172,7 @@ a:link, a:visited {
     border-radius: 5%;
     font-size: large;
 }
-a:link{
+.yhteysgrid a:link{
     color: blue;
     background-color:#87beff ;
     border:none;
@@ -235,4 +235,3 @@ a:link{
         
     }
 }
-
