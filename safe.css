@@ -11,6 +11,12 @@ body {
     background: linear-gradient(45deg, #ffffff 100%, #add8e6 44%, #ffffff 100%);
     margin: 0%;
 }
+footer {
+    text-align: center;
+    background-color: #87beff;
+    color: black;
+    padding: 3px;
+}
 
 body img{
     max-width: 100%;
@@ -215,7 +221,8 @@ a:hover, a:active {
         margin-top:5%;
     }
     .laskutustiedot{
-        margin-top: 10%;
+        margin-top: 5%;
+        padding-bottom: 5px;
     } 
     .topnav{
         display: block;
@@ -232,4 +239,8 @@ a:hover, a:active {
     .normnav{
         display: none;
     }
+    .footer{
+        padding: 20px;
+    }
+    
 }
