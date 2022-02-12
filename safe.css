@@ -147,9 +147,13 @@ a:link, a:visited {
     border: #050200 solid 5px;
     border-radius: 5%;
 }
+.normnav{
+    font-family: sans-serif;
+}
 
 .topnav{
     display: none;
+    font-family: sans-serif;
 }
 .icon{
     font-weight: 700;
