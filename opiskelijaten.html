@@ -4,13 +4,11 @@
     <title>Safe-insurance company / Finland's cheapest and worthilest insurance company</title>
     <link rel="stylesheet" href="safe.css">
     <style>
-
     .column {
     float: left;
     width: 49%;
     padding: 5px;
     }
-
     .row::after {
     content: "";
     clear: both;
@@ -20,10 +18,8 @@
     width: 100%;
     height: auto;
     }
-    footer {
-    background-color: white;
-    padding: 10px;
-    color: rgb(22, 19, 19);
+    .container {
+    position: relative;
     }
     p{
     color: black;
@@ -32,22 +28,24 @@
     span{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-    article {
-    
-    padding: 20px;
-    width: 97%;
-    background-color: white;
-}
-em {
+    em {
     text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, 2px 1px 5px rgba(1, 5, 5, 0);
     color: #ffffff;
     font-family: sans-serif;
     font-size:large;
-}
+    }
     </style>
 </head>
 
 <body>
+<header>
+    <!-- Pääotsikko sekä kuvaava teksti --> 
+    <div>
+        <div id = "otsikko">
+            <h1 class="site-title">SAFE</h1>
+            <h2 class ="site-description">Finland's cheapest and worthwhilest insurance company,<br> which offers the best deals to students.</h2>
+        </div>
+    </header>
     <!--Navigointipalkki isommille laitteille-->
     <nav class = "normnav">
         <div><a href = "indexen.html">Home</a></div>
@@ -83,44 +81,31 @@ em {
             }
         }
     </script>
-    <!-- Pääotsikko sekä kuvaava teksti --> 
-    <div>
-        <h1>Safe</h1>
-        <strong>Finland's cheapest and<br>worthwhilest insurance company, which<br>offers the best deals to students.</strong>
-    </div>
-    
+      
     <h2>Insurances for students</h2>
     <p><img src="kuvat/opiskelijaesittely2.png" alt="terrified lego figure in front of the computer desk" class="responsive"></p>
 
     <div class="row">
-        <div class="column">
-            <h3>Student's home insurance</h3>
-            <img src="Kuvat/opiskelijakämppälego01.png" alt="lego figure inside the broken egg shell" style="width:100%" class="responsive">
-        
-       
-    <p>Insuring your home is really easy! You can choose from up to three packages to find the best fit for you.</p>
+    <div class="column">
+        <h3>Student's home insurance</h3>
+        <img src="Kuvat/opiskelijakämppälego01.png" alt="lego figure inside the broken egg shell" style="width:100%" class="responsive">
+    <div class = "container"> 
+    <p>You can choose from up to three packages to find the best fit for you.</p>
 
-   
-     <p>Insurance package S fits for those who want the minimal price for their insurance. Our cheapest package includes responsibility insurance,
-         which most land lords require from their tenants. With responsibility insurance you cover accidental breakages of either personal items or someone else's which you are legally bound to cover.
-     </p>
+    <p>Insurance package S fits for those who want the minimal price for their insurance. Our cheapest package includes responsibility insurance,
+         which most land lords require from their tenants.</p>
 
-   
-     <p>Insurance package M fits for those who want more comprehensive security for their personal property. M-package covers theft insurance, which covers the theft of personal property from inside your home.
+    <p>Insurance package M fits for those who want more comprehensive security for their personal property. M-package covers theft insurance, which covers the theft of personal property from inside your home.
          Breaking into student apartments is quite common which is why one should prepare for it by insuring. </p>
 
-   
-     <p>Insurance package L is our most comprehensive package, it fits for those who want as much security on their personal property as possible.
-         A student's economy can sometimes be tight, but when it comes to home insurance, one should not attempt to haggle. L-package covers accidents in situations as follows:
-     </p>
+    <p>Insurance package L is our most comprehensive package, it fits for those who want as much security on their personal property as possible.
+         A student's economy can sometimes be tight, but when it comes to home insurance, one should not attempt to haggle.</p>
     </div>
-
+    </div>
     <div class="column">
     <h3>Student's accident insurance</h3>
      <img src="Kuvat/tapaturmalego01.png" alt="two lego figures are roleplaying" style="width:100%" class="responsive">
-     
-     <article>
-    
+     <div class = "container">
         <h3>Four reasons to take accident insurance</h3>
         <span><em>1.</em> An accident doesn't happen to your wallet, as the insurances covers healthcare even in private institutions.</span><br>
         <br>
@@ -134,9 +119,10 @@ em {
             
         <span><em>4.</em> You can additionally insure your short term incapability to work, or permanent health damage from an accident. You can insure your close family's health and in the case of 
             injuries or death.</span>
-    
-</article>
  </div>
+</div>
+</div>
+<div class = "row">
  <div class="column">
     <h3>Student's travel insurance</h3>
     <img src="Kuvat/legomatka01.png" alt="lego figure in a beach with rubber ring" style="width:100%" class="responsive">
@@ -151,7 +137,47 @@ em {
             comprehensive, it's benefits defining is schematic and is based on the average citizen's needs. People do however have varying living situations and needs for security, 
             which are completed by private insurances.</p>
    
-        </div>
     </div>    
+</div>
+    <!--Etusivun osa, johon yhteystiedot ja laskutustiedot-->
+    <section id = "yritystiedot">
+        <div class = "yhteysgrid">
+            <div class = "yhteystiedot">
+                <ul>
+                    <h3>Contact information</h3>
+                    <br>
+                    <li>Contact us!<br><a href="safe.vakuutus@safe.fi">safe.vakuutus@safe.fi</a></li>
+                    <br>
+                    <li>Lassi Luotettava, CEO, +0100100,<br><a href="luottolassi@safe.fi">luottolassi@safe.fi</a></li>
+                    <br>
+                    <li>Lotta Luottotieto, CTO, +0200200,<br><a href="luottolotta@safe.fi">luottolotta@safe.fi</a></li>
+                    <br>
+                    <li>Lauri Luototon, Marketing Manager, +0300300,<br><a href="luottolauri@safe.fi">lauriluotto@safe.fi</a></li>
+                </ul>
+            </div>
+        
+            <div class = "laskutustiedot">
+                <ul>
+                    <h3>Billing information</h3>
+                    <br>
+                    <li>E-invoice: </li>
+                    <br>
+                    <br>
+                    <li>EDI: 01029032</li>
+                    <br>
+                    <li>E-invoice operator: </li>
+                    <li>Maventa</li>
+                    <br>
+                    <li>Intermediator-identifier: </li>
+                    <li>00393021102 (LOTOFIHH)</li>
+                    <br>
+                    <li>Paper bills to: </li>
+                    <li>Safe Vakuutusyhtiö Oy, Halpakatu 23, Turku 20720</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+    <!--Footeriin voi laittaa tietosuojaselosteen ja käyttöehdot-->
 </body>
 </html>
