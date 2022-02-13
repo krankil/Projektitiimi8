@@ -182,9 +182,13 @@ a:hover, a:active {
     border-radius: 5%;
     font-size: large;
 }
+.normnav{
+    font-family: sans-serif;
+}
 
 .topnav{
     display: none;
+    font-family: sans-serif;
 }
 .icon{
     font-weight: 700;
