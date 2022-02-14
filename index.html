@@ -3,102 +3,119 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safe-vakuutusyhtiö / Suomen halvin ja kannattavin vakuutusyhtiö</title>
-    <link rel="stylesheet" href = "safe.css"> 
-    <style>
-        .column {
-         float: left;
-         width: 30%;
-         padding: 5px;
-       }
-       
-       .row::after {
-         content: "";
-         clear: both;
-         display: table;
-       } 
-       .responsive {
-         width: 100%;
-         height: auto;
-       }
-    </style>
+    <link rel = "stylesheet" href="safe.css">
+    <meta name = "description" content="Edullinen vakuutusyhtiö">
+    <meta name="keywords" content="halpa,vakuutusyhtiö">
     <meta charset ="UTF-8">
 </head>
 
 <body>
-    <!--Navigointipalkki-->
-    <nav>
+    <header>
+        <!-- Pääotsikko sekä kuvaava teksti --> 
+        <div id = "otsikko">
+            <h1 class="site-title">SAFE</h1>
+            <h2 class ="site-description">Suomen halvin ja kannattavin vakuutusyhtiö,<br> joka tarjoaa kattavia alennuksia nuorille.</h2>
+        </div>
+    </header>
+    <!--Navigointipalkki isommille laitteille-->
+    <nav class = "normnav">
+        <div><a href = "index.html">Etusivu</a></div>
         <div><a href ="henkiloasiakkaat.html">Henkilöasiakkaat</a></div>
         <div><a href ="yritysasiakkaat.html">Yritysasiakkaat</a></div>
+        <div><a href = "palaute.html">Ota yhteyttä</a></div>
+        <div><a href = "indexen.html">In English</a></div>
     </nav>
 
-    <!-- Pääotsikko sekä kuvaava teksti --> 
-    <div>
-        <h1>Safe</h1>
-        <strong>Suomen halvin ja<br>kannattavin vakuutusyhtiö, joka<br>tarjoaa kattavia alennuksia nuorille.</strong>
-    </div>
-    
+
+    <!--Puhelinnavigointipalkki-->
+    <nav class = "topnav">
+        <div id = "myLinks">
+            <div><a href = "index.html">Etusivu</a></div>
+            <div><a href ="henkiloasiakkaat.html">Henkilöasiakkaat</a></div>
+            <div><a href ="yritysasiakkaat.html">Yritysasiakkaat</a></div>
+            <div><a href = "palaute.html">Ota yhteyttä</a></div>
+            <div><a href = "indexen.html">In English</a></div>
+        </div>
+        <div>
+            <a href="javascript:void(1);" class="icon" onclick="myFunction()">
+                <i class = "fa fa-bars">Menu</i>
+            </a>
+        </div>
+    </nav>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+
+            }
+        }
+    </script>
+    <br>
     <!--Etusivun osa, johon sisältö ja linkit palveluista kertoville alisivuille-->
     <section id = "palvelutiedot">
-        <div class="row">
-            <div class="column">
-                <a href = "opiskelijat.html">
-                <div id = "ylävasen"><em>Opiskelijoille ja nuorille suunnatut vakuutuspalvelut</em></div>
-                    <img src="kuvat/opiskelijaetusivu.png" alt="Henkilö peittää kasvonsa kirjalla" style="width:100%" class="responsive">
-                </a>
-            </div>
-            <div class="column">
-                <a href = "seniorit.html">
-                <div id = "yläkeski"><em>Eläkeläisten ja ikäihmisten vakuutuspalvelut</em></div>
-                    <img src="kuvat/seniorit.png" alt="Puukirjaimista muodostunut sana seniori" style="width:100%" class="responsive">
-                </a>
-            </div>
-            <div class="column">
-                <div id = "yläoikea"><em>Ilmoita vahingosta</em></div>
-                    <img src="kuvat/vahinko.png" alt="Jäätelö pudonnut maahan" style="width:100%" class="responsive">
-            </div>
-            <div class="column">
-                <div id = "alavasen"><em>Autovakuutus</em></div>
-                    <img src="kuvat/autovakuutus.png" alt="Legoauto" style="width:100%" class="responsive">
-            </div>
-            <div class="column">
-                <div id = "alaoikea"><em>Kotivakuutus</em></div>
-                    <img src="kuvat/kotivakuuutus.jpg" alt="Koti kämmenellä" style="width:100%" class="responsive">
-            </div>
+        <div id = "kuvattimet">
+            <a href = "opiskelijat.html">
+                <div id = "ylävasen"><em>Opiskelijoiden vakuutuspalvelut</em>
+                    <img src="Kuvat/opiskelijatyttölego01.png" alt="Legoukko istuu lattialla läppäri sylissään" style="width:100%" class="responsive"></div></a>
+            <a href = "seniorit.html">
+                <div id = "yläkeski"><em>Senioreiden vakuutuspalvelut</em>
+                    <img src="Kuvat/senioriindex01.png" alt="partainen lego ukko seisoo" style="width:100%" class="responsive"></div></a>
+            <a href = "palaute.html">
+                <div id = "yläoikea"><em>Ota yhteyttä!</em>
+                    <img src="Kuvat/vahinkoindex01.png" alt="Pelastaja pelastaa pupun tulipalolta" style="width:100%" class="responsive"></div></a>
+            <a href = "henkiloasiakkaat.html">
+                <div id = "alavasen"><em>Autovakuutus</em>
+                    <img src="Kuvat/autovakuutuscopy.png" alt="Legoauto" style="width:100%" class="responsive"></div></a>
+            <a href = "henkiloasiakkaat.html">
+                    <div id = "alaoikea"><em>Kotivakuutus</em>
+                    <img src="Kuvat/kotiindex01.png" alt="Kaksi legoukkoa kotona" style="width:100%" class="responsive"></div></a>
         </div>
         </section>
     <!--Etusivun osa, johon yhteystiedot ja laskutustiedot-->
-    <section id = "yritystiedot">
-        <div id = "yhteysgrid">
-            <div id = "yhteystiedot">
-                <h4>Yhteystiedot</h4>
+    <section class = "yritystiedot">
+        <div class = "yhteysgrid">
+            <div class = "yhteystiedot">
                 <ul>
-                    <li>Ota yhteyttä! safe.vakuutus@safe.fi</li>
+                    <h3>Yhteystiedot</h3>
                     <br>
+                    <li>Ota yhteyttä!<br><a href="safe.vakuutus@safe.fi">safe.vakuutus@safe.fi</a></li>
                     <br>
-                    <li>Lassi Luotettava, Toimitusjohtaja, +0100100, luottolassi@safe.fi</li>
-                    <li>Lotta Luottotieto, Tekninen johtaja, +0200200, luottolotta@safe.fi</li>
-                    <li>Lauri Luototon, Markkinointipäällikkö, +0300300, lauriluotto@safe.fi </li>
+                    <li>Lassi Luotettava, Toimitusjohtaja, +0100100,<br><a href="luottolassi@safe.fi">luottolassi@safe.fi</a></li>
+                    <br>
+                    <li>Lotta Luottotieto, Tekninen johtaja, +0200200,<br><a href="luottolotta@safe.fi">luottolotta@safe.fi</a></li>
+                    <br>
+                    <li>Lauri Luototon, Markkinointipäällikkö, +0300300,<br><a href="luottolauri@safe.fi">luottolauri@safe.fi</a></li>
                 </ul>
             </div>
-            <div id = "laskutustiedot">
-                <h4>Laskutustiedot</h4>
+            <div class = "laskutustiedot">
                 <ul>
+                    <h3>Laskutustiedot</h3>
+                    <br>
                     <li>Verkkolaskuosoite: </li>
                     <br>
                     <br>
                     <li>Ovt-tunnus:	01029032</li>
-                    <li>Verkkolaskutusoperaattori: Maventa </li>
-                    <li>Välittäjätunnus: 00393021102 (LOTOFIHH) </li>
+                    
+                    <br>
+                    <li>Verkkolaskutusoperaattori: </li>
+                    <li>Maventa</li>
+                    <br>
+                    <li>Välittäjätunnus: </li>
+                    <li>00393021102 (LOTOFIHH)</li>
                     <br>
                     <li>Paperilaskut osoitteeseen: </li>
                     <li>Safe Vakuutusyhtiö Oy, Halpakatu 23, Turku 20720</li>
                 </ul>
             </div>
         </div>
-        
+        <!--Footeriin voi laittaa tietosuojaselosteen ja käyttöehdot-->
+        <footer>
+            <p>&copy; Safe Oyj</p>    
+            </footer>  
     </section>
-    <!--Footeriin voi laittaa tietosuojaselosteen ja käyttöehdot-->
-    <footer></footer>
 
 
 
