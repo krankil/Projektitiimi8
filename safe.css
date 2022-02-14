@@ -11,6 +11,12 @@ body {
     background: linear-gradient(45deg, #ffffff 100%, #add8e6 44%, #ffffff 100%);
     margin: 0%;
 }
+footer {
+    text-align: center;
+    background-color: #87beff;
+    color: black;
+    padding: 3px;
+}
 
 body img{
     max-width: 100%;
@@ -89,7 +95,9 @@ p {
     width: 32%;
     padding: 5px;
 }
-
+.column h3{
+    font-size: large;
+}
 .row::after {
     content: "";
     clear: both;
@@ -198,9 +206,6 @@ a:hover, a:active {
     #palvelutiedot em{
         font-size: 0.7em;
     }
-    .column h3{
-        font-size: 0.7em;
-    }
 }
 
 @media only screen and (max-width: 700px){
@@ -217,7 +222,8 @@ a:hover, a:active {
         margin-top:5%;
     }
     .laskutustiedot{
-        margin-top: 10%;
+        margin-top: 5%;
+        padding-bottom: 5px;
     } 
     .topnav{
         display: block;
@@ -233,7 +239,6 @@ a:hover, a:active {
     }
     .normnav{
         display: none;
-        
     }
     
     @media only screen and (max-width: 360px) {
@@ -242,5 +247,7 @@ a:hover, a:active {
         }
 
     }
-
+}
+.footer{
+    padding: 20px;
 }
